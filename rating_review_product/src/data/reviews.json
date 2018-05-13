@@ -1,0 +1,38 @@
+[
+  {
+  "id": 1,
+  "datePublished": "2018-05-09",
+  "author": "Jim",
+  "reviewBody": "This is my favorite product!",
+  "score":4
+ },
+ {
+   "id": 2,
+   "datePublished": "2018-05-09",
+   "author": "Jim",
+   "reviewBody": "This is my favorite product!",
+   "score": 4
+ },
+{
+  "id": 3,
+  "datePublished": "2018-05-09",
+  "author": "Jim",
+  "reviewBody": "This is my favorite product!",
+  "score": 4
+},
+{
+  "id": 4,
+  "datePublished": "2018-05-09",
+  "author": "Jim",
+  "reviewBody": "This is my favorite product!",
+  "score": 5
+},
+{
+  "id": 5,
+  "datePublished": "2018-05-09",
+  "author": "Jim",
+  "reviewBody": "This is my favorite product!",
+  "score": 3
+}
+
+]

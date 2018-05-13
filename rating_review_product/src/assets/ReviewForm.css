@@ -1,0 +1,69 @@
+.container {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  margin: 5px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ProductTitle {
+  overflow: hidden;
+  color: #505050;
+  display: block;
+  padding-left: 5%;
+  font-size: 0.9rem;
+}
+
+.heroImg {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.pItem {
+  float: left;
+  display: block;
+  width: 20%;
+}
+
+/* FORM STARS */
+
+.rating {
+  overflow: hidden;
+  vertical-align: bottom;
+  display: inline-block;
+  width: auto;
+  height: 30px;
+}
+
+.rating>input {
+  opacity: 0;
+  margin-right: -100%;
+}
+
+.rating>label {
+  position: relative;
+  display: block;
+  float: right;
+  background: url('../assets/images/OuterStar.png');
+  background-size: 30px 30px;
+}
+
+.rating>label:before {
+  display: block;
+  opacity: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: url('../assets/images/InnerStar.png');
+  background-size: 30px 30px;
+  transition: opacity 0.2s linear;
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before,
+.rating:not(:hover)> :checked~label:before {
+  opacity: 1;
+}
+
