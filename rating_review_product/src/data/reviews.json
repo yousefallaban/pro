@@ -9,28 +9,28 @@
  {
    "id": 2,
    "datePublished": "2018-05-09",
-   "author": "Jim",
+   "author": "Jack",
    "reviewBody": "This is my favorite product!",
    "score": 4
  },
 {
   "id": 3,
-  "datePublished": "2018-05-09",
-  "author": "Jim",
+  "datePublished": "2018-05-03",
+  "author": "John",
   "reviewBody": "This is my favorite product!",
   "score": 4
 },
 {
   "id": 4,
-  "datePublished": "2018-05-09",
+  "datePublished": "2018-05-05",
   "author": "Jim",
   "reviewBody": "This is my favorite product!",
   "score": 5
 },
 {
   "id": 5,
-  "datePublished": "2018-05-09",
-  "author": "Jim",
+  "datePublished": "2018-05-05",
+  "author": "Ronie",
   "reviewBody": "This is my favorite product!",
   "score": 3
 }

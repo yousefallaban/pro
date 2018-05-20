@@ -17,7 +17,9 @@ class Review extends Component {
             <Stars score={score} />
           </div>
           <li className={Styles.reviewListItem}>
-            <h5 className={Styles.reviewer}><i className="fas fa-user-circle"></i>{author}</h5>
+            <h5 className={Styles.reviewer}>
+              <i className="fas fa-user-circle"></i>{author}
+            </h5>
             <span className={Styles.reviewer}>{datePublished}</span>
           </li>
           <li className={Styles.reviewListItem}>

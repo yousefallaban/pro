@@ -20,6 +20,12 @@ it('renders without crashing', () => {
     const component = shallow(<App />);
     expect(component).toHaveLength(1)
   }) 
+  it('should handle state changes', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state().isReview).toEqual(false);
+
+   
+});
  
 })
 

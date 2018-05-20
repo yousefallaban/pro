@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
-import reviewData from './data/reviews.json';
 import Product from "./components/Product/Product";
 import ReviewsList from './components/Review/ReviewsList';
 import ReviewsDetails from './components/Review/ReviewsDetails';
+//data
+import reviewData from './data/reviews.json';
+import { loadFromLocalStorage, saveToLocalStorage } from './utils/localStorage';
+
 import './assets/App.css'
 import moment from 'moment';
 import uuid from 'uuid/v1';
-
 class App extends Component {
-  state = {
+  state = loadFromLocalStorage() || {
     reviews: reviewData,
     author: "",
     reviewBody: "",
     score: "",
     isReview: false,
   }
-
+  componentDidUpdate = () => saveToLocalStorage(this.state);
+  
   handleCreateReview = () => {
     const newReview = {
       author: this.state.author,
