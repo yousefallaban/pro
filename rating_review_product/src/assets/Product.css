@@ -74,9 +74,10 @@
   line-height: 1.75em;
 }
 
-.productList:nth-child(n+1):nth-child(odd)  {
-  background-color:#f3f3f2;
+.productList:nth-child(n+1):nth-child(odd) {
+  background-color: #f3f3f2;
 }
+
 /* res */
 
 @media (max-width: 768px) {

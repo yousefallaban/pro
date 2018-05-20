@@ -9,9 +9,9 @@ class AddReviewForm extends Component {
       handleFieldChange,
     } = this.props;
     return (
-      <div>
+      <div className={Styles.reviewFormCont}>
         <div>
-          <div className={Styles.container}>
+          <div className={Styles.productContainer}>
             <div className={Styles.pItem}>
               <img className={Styles.heroImg} src={ImgUrl} alt="" />
             </div>
@@ -20,7 +20,7 @@ class AddReviewForm extends Component {
               </h4>
           </div>
           <div>
-            <h4>Write your review</h4>
+            <span>What do you think of this article?</span>
           </div>
           <div className={Styles.rating} onChange={(e) => handleFieldChange(e, 'score')}>
             <input type="radio" id="star5" name="rating" value="5" /><label htmlFor="star5" title="Awesome!">☆</label>
@@ -29,18 +29,23 @@ class AddReviewForm extends Component {
             <input type="radio" id="star2" name="rating" value="2" /><label htmlFor="star2" title="Good">☆</label>
             <input type="radio" id="star1" name="rating" value="1" /><label htmlFor="star1" title="Bad">☆</label>
           </div>
-          <textarea name="rating" cols="30" rows="10"
-            onChange={(e) => handleFieldChange(e, 'reviewBody')}
-          >
-          </textarea>
+          <div className={Styles.reviewName}>
+            <label>your name:</label>
+            <input type="text"
+              onChange={(e) => handleFieldChange(e, 'author')} />
+          </div>
+            <span>your review: </span>
+          <div className={Styles.reviewBody}>
+            <textarea name="rating" cols="30" rows="5"
+              onChange={(e) => handleFieldChange(e, 'reviewBody')}
+            >
+            </textarea>
+          </div>
         </div>
-        <div>
-          <h4>your name</h4>
-          <input type="text"
-            onChange={(e) => handleFieldChange(e, 'author')} />
-        </div>
-        <div>
-          <button onClick={handleCreateReview}
+        
+        <div className={Styles.btnCont}>
+          <button className={Styles.btn}
+            onClick={handleCreateReview}
           >
             Post
           </button>

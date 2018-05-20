@@ -1,0 +1,35 @@
+.reviewContainer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.reviewList {
+  list-style-type: none;
+  padding: 2%;
+  border-bottom: 2px solid #00000033;
+}
+
+.reviewListItem {
+  padding: 5px;
+  display: block;
+  overflow: hidden;
+}
+
+.reviewer {
+  display: block;
+  float: left;
+  padding-right: 18px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.reviewBody {
+  display: block;
+  color: #000000bd;
+}
+
+.starcont {
+  padding: 0px;
+  margin: 0;
+}

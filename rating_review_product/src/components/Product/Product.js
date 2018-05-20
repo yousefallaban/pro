@@ -5,7 +5,6 @@ import Styles from '../../assets/Product.css';
 
 class Product extends Component {
   render() {
-    const { handleToggleReview } = this.props;
     return (
       <div className={Styles.row}>
         <header>
@@ -29,17 +28,6 @@ class Product extends Component {
             </ul>
           </div>
         </main>
-        <div>
-          <h3> Reviews</h3>
-          <div>
-            <button
-              onClick={handleToggleReview} >
-              <span>
-                Add a review
-              </span>  
-            </button>
-          </div>
-        </div>
       </div>
     );
   }

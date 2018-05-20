@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import reviewData from './data/reviews.json';
 import Product from "./components/Product/Product";
 import ReviewsList from './components/Review/ReviewsList';
+import ReviewsDetails from './components/Review/ReviewsDetails';
 import './assets/App.css'
 import moment from 'moment';
 import uuid from 'uuid/v1';
@@ -11,7 +12,7 @@ class App extends Component {
     reviews: reviewData,
     author: "",
     reviewBody: "",
-    score: "" ,
+    score: "",
     isReview: false,
   }
 
@@ -25,8 +26,8 @@ class App extends Component {
     }
     this.setState({
       reviews: [
+        newReview,
         ...this.state.reviews,
-       newReview,
       ],
       isReview: !this.state.isReview
     });
@@ -45,10 +46,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        < Product
-          handleToggleReview={
-            this.handleToggleReview
-          }
+        < Product />
+        < ReviewsDetails
+          handleToggleReview={this.handleToggleReview}
+          reviews={this.state.reviews}
         />
         < ReviewsList
           reviews={this.state.reviews}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Review from './Review';
+import ReviewForm from './ReviewForm';
 import Modal from "../../Helpers/Modal/Modal.js";
-import ReviewForm from "./ReviewForm";
 
 class ReviewsList extends Component {
 
@@ -12,13 +12,8 @@ class ReviewsList extends Component {
       handleCreateReview,
       handleFieldChange, } = this.props;
     
-//calc the average rating    
-    const scores = reviews.map(review => review.score)
-    const totalScore = reviews.reduce((acc, cur) => acc + cur.score, 0) / scores.length;
-    const roundTotalScore = Math.round(totalScore * 10) / 10
     return (
       <div>
-        <h1>{roundTotalScore} </h1>
         {
           reviews.map(review => (
             <Review key={review.id}
@@ -36,7 +31,6 @@ class ReviewsList extends Component {
               < ReviewForm
                 handleCreateReview={handleCreateReview}
                 handleFieldChange={handleFieldChange}
-
               />
             </Modal>
             : null

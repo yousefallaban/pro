@@ -1,10 +1,16 @@
-.container {
+.reviewFormCont {
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.productContainer {
   content: ' ';
   display: inline-block;
   width: 100%;
   margin: 5px;
   padding: 0;
   list-style-type: none;
+  border-bottom: 1px solid black;
 }
 
 .ProductTitle {
@@ -67,3 +73,43 @@
   opacity: 1;
 }
 
+.reviewName {
+  padding: 4%
+}
+
+.reviewName label,
+.reviewBody label {
+  text-transform: capitalize;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+.reviewBody {
+  display: block;
+  margin: 0%;
+  padding: 0%;
+  width: 50%;
+}
+
+.btnCont {
+  margin: 0 auto;
+  width: 27%;
+  padding: 5%;
+}
+
+.btn {
+  outline: none;
+  background: #3498db;
+  border: 1px;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  outline-color: none;
+  background: #3cb0fd;
+}
